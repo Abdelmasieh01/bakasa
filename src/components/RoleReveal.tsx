@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useGame } from '../store/GameContext';
 import type { Player } from '../types/game';
+import TopicItemMedia from './TopicItemMedia';
 import './RoleReveal.css';
 
 export default function RoleReveal() {
@@ -73,6 +74,7 @@ export default function RoleReveal() {
                   The secret item is:
                 </p>
                 <div className="item-reveal">
+                  <TopicItemMedia item={state.currentItem} size="lg" className="item-reveal-media" />
                   <span className="item-name">{state.currentItem?.name}</span>
                   {state.currentItem?.hint && (
                     <span className="item-hint">"{state.currentItem.hint}"</span>

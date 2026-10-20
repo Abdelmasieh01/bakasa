@@ -1,6 +1,4 @@
-import React from 'react';
 import { useGame } from '../store/GameContext';
-import type { Player } from '../types/game';
 import './Scoreboard.css';
 
 export default function Scoreboard() {
@@ -23,7 +21,6 @@ export default function Scoreboard() {
       <div className="scores-list">
         {sorted.map((player, rank) => {
           const isImposter = state.imposterIds.includes(player.id);
-          const isTop = player.score === topScore && topScore > 0;
           return (
             <div
               key={player.id}

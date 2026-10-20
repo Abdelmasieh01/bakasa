@@ -6,27 +6,49 @@
     {
       "id": "leather-jacket",
       "name": "Leather Jacket",
+      "emoji": "🧥",
       "hint": "A classic piece that never goes out of style"
     },
     {
       "id": "stiletto-heels",
       "name": "Stiletto Heels",
+      "emoji": "👠",
       "hint": "Tall and narrow — not the most comfortable"
     },
     {
       "id": "trench-coat",
       "name": "Trench Coat",
+      "image": "🧥",
       "hint": "Originally military, now a wardrobe staple"
     },
     {
       "id": "bucket-hat",
       "name": "Bucket Hat",
+      "emoji": "👒",
       "hint": "Casual brimmed hat popular in streetwear"
     },
     {
       "id": "denim-overalls",
       "name": "Denim Overalls",
+      "image": "👖",
       "hint": "Workwear turned fashion favourite"
+    },
+    {
+      "id": "sunglasses",
+      "name": "Sunglasses",
+      "emoji": "🕶️",
+      "hint": "Shades for bright days and sleek looks"
+    },
+    {
+      "id": "wristwatch",
+      "name": "Wristwatch",
+      "emoji": "⌚",
+      "hint": "Timepiece and status symbol on your wrist"
+    },
+    {
+      "id": "minimalist-ring",
+      "name": "Minimalist Ring",
+      "hint": "Subtle metallic band with no ornamentation"
     }
   ]
 }

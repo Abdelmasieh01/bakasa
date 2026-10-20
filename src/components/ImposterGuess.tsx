@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react';
 import { useGame } from '../store/GameContext';
 import { shuffleArray } from '../utils/helpers';
+import TopicItemMedia, { getItemMedia } from './TopicItemMedia';
 import './ImposterGuess.css';
 
 export default function ImposterGuess() {
@@ -76,11 +77,15 @@ export default function ImposterGuess() {
               <option value="" disabled>
                 -- Choose secret item / اختر العنصر --
               </option>
-              {options.map((item) => (
-                <option key={item.id} value={item.name}>
-                  {item.name}
-                </option>
-              ))}
+              {options.map((item) => {
+                const media = getItemMedia(item);
+                const emoji = media?.type === 'emoji' ? `${media.value} ` : '';
+                return (
+                  <option key={item.id} value={item.name}>
+                    {emoji}{item.name}
+                  </option>
+                );
+              })}
             </select>
           </div>
           <button
@@ -95,13 +100,19 @@ export default function ImposterGuess() {
         <div className={`guess-result ${correct ? 'correct' : 'wrong'}`}>
           {correct ? (
             <>
-              <div className="result-emoji">🎉</div>
+              <div className="result-emoji">
+                <TopicItemMedia item={state.currentItem} size="lg" />
+                {!getItemMedia(state.currentItem) && '🎉'}
+              </div>
               <h3>Correct! The item was "{state.currentItem?.name}"</h3>
               <p>Imposter earns +100 points!</p>
             </>
           ) : (
             <>
-              <div className="result-emoji">😬</div>
+              <div className="result-emoji">
+                <TopicItemMedia item={state.currentItem} size="lg" />
+                {!getItemMedia(state.currentItem) && '😬'}
+              </div>
               <h3>Wrong! You guessed "{guess}"</h3>
               <p>
                 The real item was: <strong>{state.currentItem?.name}</strong>
