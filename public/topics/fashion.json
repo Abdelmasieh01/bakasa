@@ -1,0 +1,32 @@
+{
+  "id": "fashion",
+  "name": "Fashion",
+  "emoji": "👗",
+  "items": [
+    {
+      "id": "leather-jacket",
+      "name": "Leather Jacket",
+      "hint": "A classic piece that never goes out of style"
+    },
+    {
+      "id": "stiletto-heels",
+      "name": "Stiletto Heels",
+      "hint": "Tall and narrow — not the most comfortable"
+    },
+    {
+      "id": "trench-coat",
+      "name": "Trench Coat",
+      "hint": "Originally military, now a wardrobe staple"
+    },
+    {
+      "id": "bucket-hat",
+      "name": "Bucket Hat",
+      "hint": "Casual brimmed hat popular in streetwear"
+    },
+    {
+      "id": "denim-overalls",
+      "name": "Denim Overalls",
+      "hint": "Workwear turned fashion favourite"
+    }
+  ]
+}

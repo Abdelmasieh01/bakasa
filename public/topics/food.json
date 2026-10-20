@@ -1,0 +1,32 @@
+{
+  "id": "food",
+  "name": "Food",
+  "emoji": "🍕",
+  "items": [
+    {
+      "id": "sushi",
+      "name": "Sushi",
+      "hint": "Japanese delicacy — rice meets raw fish"
+    },
+    {
+      "id": "pizza",
+      "name": "Pizza",
+      "hint": "Round, cheesy, and universally loved"
+    },
+    {
+      "id": "croissant",
+      "name": "Croissant",
+      "hint": "Flaky, buttery, and very French"
+    },
+    {
+      "id": "tacos",
+      "name": "Tacos",
+      "hint": "Mexican street food in a folded shell"
+    },
+    {
+      "id": "biryani",
+      "name": "Biryani",
+      "hint": "Fragrant spiced rice dish from South Asia"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+    "id": "sex_positions",
+    "name": "Sex Positions",
+    "emoji": "🛏️",
+    "items": [
+        {
+            "id": "missionary",
+            "name": "Missionary",
+            "hint": "أحد الشريكين مستلقٍ على ظهره والآخر في الأعلى ويواجهه."
+        },
+        {
+            "id": "cowgirl",
+            "name": "Cowgirl",
+            "hint": "أحد الشريكين في الأعلى ويواجه الشريك الآخر."
+        },
+        {
+            "id": "reverse_cowgirl",
+            "name": "Reverse Cowgirl",
+            "hint": "أحد الشريكين في الأعلى وظهره ناحية الشريك الآخر."
+        },
+        {
+            "id": "doggy_style",
+            "name": "Doggy Style",
+            "hint": "أحد الشريكين على يديه وركبتيه والآخر خلفه."
+        },
+        {
+            "id": "spooning",
+            "name": "Spooning",
+            "hint": "الشريكان مستلقيان على جانبيهما في الاتجاه نفسه، مع وجود أحدهما خلف الآخر."
+        },
+        {
+            "id": "standing",
+            "name": "Standing",
+            "hint": "ممارسة العلاقة في وضع الوقوف."
+        },
+        {
+            "id": "sitting_face_to_face",
+            "name": "Sitting Face to Face",
+            "hint": "الشريكان جالسان في مواجهة بعضهما مع التقارب الجسدي."
+        },
+        {
+            "id": "lotus",
+            "name": "Lotus",
+            "hint": "أحد الشريكين جالس والآخر قريب منه مع احتضان متبادل."
+        },
+        {
+            "id": "side_by_side",
+            "name": "Side by Side",
+            "hint": "الشريكان مستلقيان بجانب بعضهما."
+        },
+        {
+            "id": "edge_of_bed",
+            "name": "Edge of the Bed",
+            "hint": "أحد الشريكين عند حافة السرير والآخر أمامه."
+        },
+        {
+            "id": "legs_on_shoulders",
+            "name": "Legs on Shoulders",
+            "hint": "أحد الشريكين مستلقٍ ويرفع ساقيه لتستقرا على كتفي الشريك الآخر."
+        },
+        {
+            "id": "prone_bone",
+            "name": "Prone Bone",
+            "hint": "أحد الشريكين مستلقٍ على بطنه والآخر خلفه."
+        },
+        {
+            "id": "scissors",
+            "name": "Scissors",
+            "hint": "الشريكان مستلقيان في وضع متقابل مع تشابك الساقين."
+        },
+        {
+            "id": "kneeling",
+            "name": "Kneeling",
+            "hint": "أحد الشريكين أو كلاهما في وضع الركوع مع التقارب الجسدي."
+        },
+        {
+            "id": "chair",
+            "name": "Chair",
+            "hint": "أحد الشريكين جالس على كرسي والآخر قريب منه في وضع متقابل."
+        }
+    ]
+}

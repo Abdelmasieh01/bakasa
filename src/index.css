@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/* ─── Design Tokens ─────────────────────────────────────────────────────────── */
+:root {
+  --bg-deep:    #0a0b0f;
+  --bg-surface: #12141a;
+  --bg-card:    #1a1d26;
+  --bg-card2:   #22263a;
+  --border:     rgba(255,255,255,0.08);
+  --border-glow:rgba(139,92,246,0.35);
+
+  --purple:     #8b5cf6;
+  --purple-lt:  #a78bfa;
+  --pink:       #ec4899;
+  --cyan:       #22d3ee;
+  --gold:       #f59e0b;
+  --green:      #22c55e;
+  --red:        #ef4444;
+
+  --text-primary:   #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted:     #475569;
+
+  --radius-sm:  8px;
+  --radius-md:  14px;
+  --radius-lg:  20px;
+  --radius-xl:  28px;
+
+  --shadow-glow: 0 0 40px rgba(139,92,246,0.25);
+  --shadow-card: 0 8px 32px rgba(0,0,0,0.5);
+  --shadow-btn:  0 4px 20px rgba(139,92,246,0.4);
+
+  --transition: all 0.25s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* ─── Reset ──────────────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--bg-deep);
+  color: var(--text-primary);
+  font-family: 'Cairo', 'Outfit', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  outline: none;
+}
+
+/* ─── App Shell ───────────────────────────────────────────────────────────────── */
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(139,92,246,0.18) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 30% at 80% 80%, rgba(236,72,153,0.10) 0%, transparent 60%),
+    var(--bg-deep);
+  padding: 0 16px 40px;
+}
+
+/* ─── Shared Card ─────────────────────────────────────────────────────────────── */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+}
+
+/* ─── Shared Buttons ─────────────────────────────────────────────────────────── */
+.btn-primary {
+  background: linear-gradient(135deg, var(--purple), var(--pink));
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 14px 36px;
+  border-radius: 50px;
+  box-shadow: var(--shadow-btn);
+  letter-spacing: 0.03em;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(139,92,246,0.5);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-primary:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ─── Scrollbar ───────────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-deep); }
+::-webkit-scrollbar-thumb { background: var(--border-glow); border-radius: 3px; }

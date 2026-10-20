@@ -1,0 +1,22 @@
+[
+  {
+    "id": "fashion",
+    "file": "/topics/fashion.json",
+    "emoji": "👗"
+  },
+  {
+    "id": "food",
+    "file": "/topics/food.json",
+    "emoji": "🍕"
+  },
+  {
+    "id": "sex_positions",
+    "file": "/topics/sex_positions.json",
+    "emoji": "🛏️"
+  },
+  {
+    "id": "kinks_fetishes",
+    "file": "/topics/kinks_fetishes.json",
+    "emoji": "🖤"
+  }
+]

@@ -1,0 +1,217 @@
+.scoreboard-screen {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  padding-top: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+/* ─── Header ─── */
+.scoreboard-header {
+  text-align: center;
+}
+
+.scoreboard-header h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--gold), #f97316, var(--pink));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.scoreboard-header p {
+  color: var(--text-muted);
+  margin-top: 4px;
+  font-size: 0.9rem;
+}
+
+/* ─── Scores List ─── */
+.scores-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.score-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 14px 16px;
+  transition: var(--transition);
+  animation: slide-row 0.3s ease both;
+}
+
+.score-row:nth-child(1) { animation-delay: 0.05s; }
+.score-row:nth-child(2) { animation-delay: 0.10s; }
+.score-row:nth-child(3) { animation-delay: 0.15s; }
+.score-row:nth-child(4) { animation-delay: 0.20s; }
+
+@keyframes slide-row {
+  from { opacity: 0; transform: translateX(-16px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.score-row.first {
+  border-color: var(--gold);
+  background: linear-gradient(90deg, rgba(245,158,11,0.08), var(--bg-card));
+  box-shadow: 0 0 20px rgba(245,158,11,0.15);
+}
+
+.score-row.second {
+  border-color: rgba(148,163,184,0.4);
+  background: linear-gradient(90deg, rgba(148,163,184,0.06), var(--bg-card));
+}
+
+.score-row.third {
+  border-color: rgba(180,83,9,0.4);
+  background: linear-gradient(90deg, rgba(180,83,9,0.06), var(--bg-card));
+}
+
+.rank-number {
+  font-size: 1.1rem;
+  min-width: 28px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.score-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  border: 2px solid rgba(255,255,255,0.12);
+  flex-shrink: 0;
+}
+
+.score-info {
+  min-width: 80px;
+}
+
+.score-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.spy-inline {
+  font-size: 0.85rem;
+}
+
+.score-bar-wrap {
+  flex: 1;
+  height: 6px;
+  background: var(--bg-card2);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.score-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--purple), var(--pink));
+  border-radius: 3px;
+  transition: width 1s ease 0.3s;
+  min-width: 0;
+}
+
+.score-points {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--gold);
+  min-width: 56px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+/* ─── Scoring Legend ─── */
+.scoring-legend {
+  width: 100%;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 18px 20px;
+}
+
+.scoring-legend h3 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+
+.legend-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+.legend-item strong {
+  color: var(--green);
+  font-weight: 700;
+}
+
+/* ─── Actions ─── */
+.scoreboard-actions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.next-round-btn {
+  background: linear-gradient(135deg, var(--purple), var(--pink));
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 14px 0;
+  border-radius: 50px;
+  box-shadow: 0 6px 24px rgba(139,92,246,0.4);
+  transition: var(--transition);
+  width: 100%;
+  max-width: 320px;
+}
+
+.next-round-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 32px rgba(139,92,246,0.55);
+}
+
+.restart-btn, .reset-scores-btn {
+  background: var(--bg-card);
+  border: 1px solid var(--border-glow);
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 10px 28px;
+  border-radius: 50px;
+  transition: var(--transition);
+}
+
+.restart-btn:hover, .reset-scores-btn:hover {
+  color: var(--purple-lt);
+  border-color: var(--purple);
+}

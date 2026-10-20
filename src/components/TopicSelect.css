@@ -1,0 +1,190 @@
+.topic-screen {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+  padding-top: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.topic-header {
+  text-align: center;
+}
+
+.topic-header h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--cyan), var(--purple));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.topic-header p {
+  color: var(--text-secondary);
+  margin-top: 6px;
+}
+
+.loading-spinner {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  padding: 40px;
+}
+
+/* ─── Topic Grid ─── */
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 14px;
+  width: 100%;
+}
+
+.topic-card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.topic-card:hover {
+  border-color: var(--border-glow);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(139,92,246,0.15);
+}
+
+.topic-card.selected {
+  border-color: var(--purple);
+  background: rgba(139,92,246,0.1);
+  box-shadow: 0 0 0 2px rgba(139,92,246,0.35), 0 8px 24px rgba(139,92,246,0.2);
+  transform: translateY(-3px);
+}
+
+.topic-emoji {
+  font-size: 2.2rem;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4));
+}
+
+.topic-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.topic-check {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: var(--purple);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 800;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ─── Imposter Config ─── */
+.imposter-config {
+  width: 100%;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+  text-align: center;
+}
+
+.imposter-config h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.imposter-stepper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 8px;
+}
+
+.imposter-stepper button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--bg-card2);
+  border: 1.5px solid var(--border-glow);
+  color: var(--purple-lt);
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.imposter-stepper button:hover:not(:disabled) {
+  background: rgba(139,92,246,0.2);
+  transform: scale(1.08);
+}
+
+.imposter-stepper button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.imposter-count {
+  font-size: 2rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--pink), var(--purple));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  min-width: 40px;
+  text-align: center;
+}
+
+.imposter-hint {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+/* ─── Confirm Btn ─── */
+.confirm-btn {
+  background: linear-gradient(135deg, var(--purple), var(--pink));
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 800;
+  padding: 16px 60px;
+  border-radius: 50px;
+  box-shadow: 0 6px 30px rgba(139,92,246,0.45);
+  letter-spacing: 0.04em;
+  transition: var(--transition);
+  width: 100%;
+  max-width: 300px;
+}
+
+.confirm-btn:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 40px rgba(139,92,246,0.55);
+}
+
+.confirm-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
