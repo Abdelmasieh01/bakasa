@@ -12,7 +12,8 @@ export interface Player {
 export interface TopicItem {
   id: string;
   name: string;
-  image?: string; // optional image path
+  image?: string; // optional image path or URL or emoji
+  emoji?: string; // optional emoji
   hint?: string;  // optional hint text
 }
 

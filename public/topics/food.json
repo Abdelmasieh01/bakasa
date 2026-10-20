@@ -6,27 +6,43 @@
     {
       "id": "sushi",
       "name": "Sushi",
+      "emoji": "🍣",
       "hint": "Japanese delicacy — rice meets raw fish"
     },
     {
       "id": "pizza",
       "name": "Pizza",
+      "image": "🍕",
       "hint": "Round, cheesy, and universally loved"
+    },
+    {
+      "id": "burger",
+      "name": "Burger",
+      "image": "/topics/images/burger.svg",
+      "hint": "Juicy grilled patty stacked between sesame buns"
     },
     {
       "id": "croissant",
       "name": "Croissant",
+      "emoji": "🥐",
       "hint": "Flaky, buttery, and very French"
     },
     {
       "id": "tacos",
       "name": "Tacos",
+      "image": "🌮",
       "hint": "Mexican street food in a folded shell"
     },
     {
       "id": "biryani",
       "name": "Biryani",
+      "emoji": "🍛",
       "hint": "Fragrant spiced rice dish from South Asia"
+    },
+    {
+      "id": "falafel",
+      "name": "Falafel",
+      "hint": "Deep-fried spiced chickpea balls from the Middle East"
     }
   ]
 }

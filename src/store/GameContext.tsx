@@ -1,4 +1,4 @@
-import { createContext, useContext, useReducer, useEffect, type ReactNode } from 'react';
+import { createContext, useContext, useReducer, useEffect, type ReactNode, type Dispatch } from 'react';
 import type { GameState } from '../types/game';
 import type { GameAction } from './gameReducer';
 import { gameReducer, initialState } from './gameReducer';
@@ -7,7 +7,7 @@ const LS_KEY = 'bakasa_game_state';
 
 interface GameContextValue {
   state: GameState;
-  dispatch: React.Dispatch<GameAction>;
+  dispatch: Dispatch<GameAction>;
 }
 
 const GameContext = createContext<GameContextValue | null>(null);
@@ -21,7 +21,7 @@ export function GameProvider({ children }: { children: ReactNode }) {
         // Always start fresh at setup if no players saved
         if (!parsed.players || parsed.players.length === 0) return initialState;
         // Resume only if we have players; always return to setup for safety
-        return { ...parsed, phase: 'setup' };
+        return { ...parsed, phase: 'setup' as const };
       }
     } catch {
       // ignore
